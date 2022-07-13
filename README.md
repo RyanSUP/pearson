@@ -3,6 +3,9 @@
 
 The goal of this assessment was to create a number line with 2 draggable nodes. The range between the nodes should be bold and the nodes should snap to the nearest tick.
 
+Deployed using surge:
+[https://ryanmorici-pearson.surge.sh/](https://ryanmorici-pearson.surge.sh/)
+
 ## Steps and resources :
 
 Since JQuery was allowed, I researched [JQuery slider widget](https://api.jqueryui.com/slider/) and used that as a starting point.
