@@ -12,15 +12,29 @@ body {
     width: 440px;
 }
 
+.slider-label {
+    position: absolute;
+    bottom: 20px;
+}
+
+.tick {
+    position: absolute;
+    height: 35px;
+    border: 1px solid black;
+    width: 0px;
+    display: inline;
+    top: -15px;
+}
+
 #slider-range {
-    border: 1px solid lightgray;
-    background: lightgray;
+    border: none;
+    background: black;
     height: 2px;
 }
 
 .ui-slider-range {
     background: black !important;
-    border: 1px solid black !important;
+    border: 2px solid black !important;
 }
 
 .ui-slider-handle {

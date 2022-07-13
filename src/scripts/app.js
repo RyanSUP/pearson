@@ -12,13 +12,20 @@ $(function() {
         let sliderOptions = $(this).data().uiSlider.options;
         let vals = sliderOptions.max - sliderOptions.min;
 
-        for (var i = 0; i <= vals; i++) {
-          var el = $('<label>'+(i-5)+'</label>');
-          el.css('position', 'absolute')
-          el.css('left',(i/vals*100)+'%');
-          el.css('bottom','20px');
-          $( "#slider-range" ).append(el);
+        for (let i = 0; i <= vals; i++) {
+          let label = $('<label>'+(i-5)+'</label>');
+          label.css('left',(i/vals*100)+'%');
+          label.addClass('slider-label');
+
+          let tick = $('<div></div>');
+          tick.css('left',(i/vals*100)+'%');
+          tick.addClass('tick');
+
+        
+          $( "#slider-range" ).append(label);
+          $( "#slider-range" ).append(tick);
           
         }
+
       });
   });
